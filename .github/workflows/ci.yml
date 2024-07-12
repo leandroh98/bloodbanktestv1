@@ -28,6 +28,7 @@ jobs:
         with:
           dotnet-version: ${{ env.DOTNET_VERSION }}
       - name: Restaurar los paquetes
+        run: dotnet build
         run: dotnet restore 
       - name: Ejecutar pruebas
         run: dotnet test --collect:"XPlat Code Coverage"
