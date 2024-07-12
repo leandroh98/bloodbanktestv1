@@ -6,7 +6,7 @@ env:
   SONAR_PROJECT: 'leandroh98_bloodbank'        # Key ID del proyecto de sonar
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "master" ]
   workflow_dispatch:
 
 jobs:
