@@ -7,7 +7,7 @@ namespace Bank.Domain.Tests.Features
     public sealed class CuentaPersonalPruebas
     {
         private readonly ScenarioContext _scenarioContext;
-        private CuentaAhorro _cuenta { get; set; }
+        private CuentaPersonal _cuenta { get; set; }
         private string _error { get; set; }
         private bool _es_error { get; set; } = false;
         
@@ -21,8 +21,8 @@ namespace Bank.Domain.Tests.Features
         {
             try
             {
-                var cliente = Cliente.Registrar("Juan Perez");
-                _cuenta = CuentaAhorro.Aperturar(numeroCuenta, cliente, 1);
+                var cliente = Paciente.Registrar("Juan Perez");
+                _cuenta = CuentaPersonal.Aperturar(numeroCuenta, cliente, 1);
             }
             catch (System.Exception ex)
             {

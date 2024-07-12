@@ -14,7 +14,7 @@
         
         public static CuentaPersonal Aperturar(string _numeroCuenta, Paciente _propietario, decimal _tasa)
         {
-            return new CuentaAhorro()
+            return new CuentaPersonal()
             {
                 NumeroCuenta = _numeroCuenta,
                 Propietario = _propietario,

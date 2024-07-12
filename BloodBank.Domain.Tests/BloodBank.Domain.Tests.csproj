@@ -24,7 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Bank.Domain\BloodBank.Domain.csproj" />
+    <ProjectReference Include="..\BloodBank.Domain\BloodBank.Domain.csproj" />
   </ItemGroup>
 
 </Project>

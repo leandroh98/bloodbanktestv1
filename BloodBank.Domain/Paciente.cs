@@ -6,7 +6,7 @@ namespace Bank.Domain
         public string NombreCliente { get; private set; }
         public static Paciente Registrar(string _nombre)
         {
-            return new Cliente(){
+            return new Paciente(){
                 NombreCliente = _nombre
             };
         }   
