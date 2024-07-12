@@ -27,8 +27,9 @@ jobs:
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: ${{ env.DOTNET_VERSION }}
-      - name: Restaurar los paquetes
+      - name: construir el proyecto
         run: dotnet build
+      - name: Restaurar los paquetes
         run: dotnet restore 
       - name: Ejecutar pruebas
         run: dotnet test --collect:"XPlat Code Coverage"
