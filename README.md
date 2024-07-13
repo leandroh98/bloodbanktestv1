@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-a
-=======
+
 
 Proyecto de Unidad 3
 “BloodBank”
